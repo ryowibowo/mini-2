@@ -1,0 +1,35 @@
+<html>
+
+<head>
+    <title>
+        User | all
+    </title>
+</head>
+
+<body>
+    <% data.forEach(i => { %>
+        <div>
+            <h1>
+                <%= i.username %>
+            </h1>
+            <p>
+                <%= i.password %>
+            </p>
+            <a href="/users/<%= i.id %>">Lanjut</a>
+            <br>
+
+            <a href="/users/update/<%= i.id %>">
+          Update
+        </a>
+
+            <br>
+
+            <a href="/users/delete/<%= i.id %>">
+          Hapus
+        </a>
+
+        </div>
+        <% }) %>
+</body>
+
+</html>

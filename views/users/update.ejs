@@ -1,0 +1,31 @@
+<html>
+
+<head>
+    <Title>
+        Article | Update
+    </Title>
+</head>
+
+<body>
+    <form method="POST" action="/users/update/<%= data.id %>">
+        <label for="title">
+        Username
+      </label>
+        <br>
+        <input type="text" name="username" value="<%= data.username %>">
+        <br>
+
+        <label for="body">
+        Password
+      </label>
+        <br>
+        <input type="text" name="password" value="<%= data.password %>">
+        <br>
+
+        <button type="submit">
+        Submit
+      </button>
+    </form>
+</body>
+
+</html>
